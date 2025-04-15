@@ -1,0 +1,16 @@
+{
+    "employee": {
+        "id": 182,
+        "name": "Ravi",
+        "department": "HR",
+        "skills": [
+            "Communication",
+            "Recruitment",
+            "Management"
+        ],
+        "address": {
+            "city": "Delhi",
+            "zip": "274227"
+        }
+    }
+}
