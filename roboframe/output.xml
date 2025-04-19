@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-19T16:26:13.501891" rpa="false" schemaversion="5">
+<suite id="s1" name="Ssh Test" source="C:\Users\harsh.shetty\Desktop\roboframe\ssh_test.robot">
+<test id="s1-t1" name="Connect And Run Command" line="10">
+<kw name="Open Connection" owner="SSHLibrary">
+<arg>${HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" start="2025-04-19T16:26:13.734397" elapsed="0.000315"/>
+</kw>
+<kw name="Login" owner="SSHLibrary">
+<msg time="2025-04-19T16:26:13.735317" level="INFO">Logging into 'test.rebex.net:22' as 'demo'.</msg>
+<msg time="2025-04-19T16:26:16.773864" level="FAIL">TimeoutError: timed out</msg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<status status="FAIL" start="2025-04-19T16:26:13.735057" elapsed="3.047419">TimeoutError: timed out</status>
+</kw>
+<kw name="Execute Command" owner="SSHLibrary">
+<var>${output}</var>
+<arg>ls</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" start="2025-04-19T16:26:16.782995" elapsed="0.000057"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-19T16:26:16.783385" elapsed="0.000026"/>
+</kw>
+<kw name="Close Connection" owner="SSHLibrary">
+<doc>Closes the current connection.</doc>
+<status status="NOT RUN" start="2025-04-19T16:26:16.783718" elapsed="0.000024"/>
+</kw>
+<status status="FAIL" start="2025-04-19T16:26:13.733289" elapsed="3.050813">TimeoutError: timed out</status>
+</test>
+<status status="FAIL" start="2025-04-19T16:26:13.504955" elapsed="3.280992"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Ssh Test" id="s1" pass="0" fail="1" skip="0">Ssh Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
